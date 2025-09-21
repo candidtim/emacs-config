@@ -135,7 +135,7 @@
   (evil-define-key 'normal lsp-mode-map (kbd "SPC c") lsp-command-map)
   (setq gc-cons-threshold 100000000)
   (setq lsp-enable-snippet nil)
-  (setq lsp-headerline-breadcrumb-segments '(file))
+  (setq lsp-headerline-breadcrumb-enable nil)
   :commands (lsp lsp-deferred)
   :hook
   (python-mode . lsp-deferred)
