@@ -74,6 +74,9 @@
 (define-key evil-normal-state-map (kbd "SPC t l")
   (lambda () (interactive) (load-theme 'doom-solarized-light t)))
 
+;; Copilot
+(define-key evil-insert-state-map (kbd "C-c c") 'copilot-complete)
+
 ;; GPTel
 (define-key evil-normal-state-map (kbd "SPC g c") 'gptel)
 (define-key evil-normal-state-map (kbd "SPC g s") 'gptel-send)
