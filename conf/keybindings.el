@@ -64,9 +64,9 @@
       (beginning-of-line))))
 (define-key evil-normal-state-map (kbd "0") 'candidtim/smart-beginning-of-line)
 
-;; Ace Jump
-(define-key evil-normal-state-map (kbd "SPC SPC w") 'evil-ace-jump-word-mode)
-(define-key evil-normal-state-map (kbd "SPC SPC j") 'evil-ace-jump-line-mode)
+;; Avy
+(define-key evil-normal-state-map (kbd "SPC SPC w") 'avy-goto-word-0)
+(define-key evil-normal-state-map (kbd "SPC SPC j") 'avy-goto-line)
 
 ;; UI
 (define-key evil-normal-state-map (kbd "SPC t d")
