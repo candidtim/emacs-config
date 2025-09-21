@@ -191,7 +191,16 @@
   :hook (prog-mode . rainbow-delimiters-mode))
 
 ;; Copilot
-;; TODO: Copilot
+(use-package copilot
+  :hook (prog-mode . copilot-mode)
+  :bind (:map copilot-completion-map
+              ("<tab>" . 'copilot-accept-completion)
+              ("C-<tab>" . 'copilot-accept-completion-by-word)
+              ("C-n" . 'copilot-next-completion)
+              ("C-p" . 'copilot-previous-completion))
+  :config
+  ;; no automatic completion, see keybindings:
+  (setq copilot-idle-delay nil))
 
 ;; GPTel
 (use-package gptel
