@@ -77,8 +77,8 @@
   :config
   (global-evil-surround-mode 1))
 
-;; Ace Jump
-(use-package ace-jump-mode)
+;; Avy
+(use-package avy)
 
 ;;
 ;; Other packages
