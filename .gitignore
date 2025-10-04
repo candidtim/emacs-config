@@ -3,4 +3,5 @@ eln-cache/
 etc/
 var/
 custom.el
+conf/local.el
 .last-package-update-day
